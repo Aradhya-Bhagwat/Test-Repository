@@ -1,46 +1,161 @@
 # Git Branching Practice – Java Array Operations
 
-This repository is created to **practice Git branching, feature isolation, and merging** using a simple Java program.
-
-## 📂 Project Overview
-
-* Base Java program creates an **array**
-* Separate branches were created for individual features:
-
-  * `sort-branch` → Array sorting logic
-  * `insert-branch` → Insert element into array
-  * `delete-branch` → Delete element from array
-* All branches were **merged back into `main`**
-
-This simulates a **real-world feature-based Git workflow**.
+This repository demonstrates a **feature-based Git workflow** using a simple **Java array program**.
+Each array operation is implemented in a **separate Git branch**, following **standard Git practices**.
 
 ---
 
-## 🌿 Branching Strategy (Visual)
+## 🚀 Objective
 
+* Practice **Git branching and commits**
+* Implement features in **isolated branches**
+* Understand real terminal-level Git workflow
+
+---
+
+## 🔹 Step 1: Clone Repository (Main Branch)
+
+```bash
+C:\Users\aradhya\Desktop>git clone https://github.com/Aradhya-Bhagwat/Test-Repository.git
+Cloning into 'Test-Repository'...
+Receiving objects: 100% (6/6), done.
 ```
-main
- │
- ├── sort-branch
- │       └── (array sorting logic)
- │
- ├── insert-branch
- │       └── (array insertion logic)
- │
- └── delete-branch
-         └── (array deletion logic)
 
-All branches merged → main
+```bash
+C:\Users\aradhya\Desktop\Test-Repository>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  task2.java
 ```
 
 ---
 
-## 🧠 What I Practiced
+## 🔹 Step 2: Add & Commit Base Java File (Main)
 
-* Creating and switching branches
-* Working on independent features
-* Merging multiple branches into main
-* Understanding clean Git history
+```bash
+git add .
+git commit -m "Added initial Java file"
+git push origin main
+```
+
+```bash
+git branch
+* main
+```
+
+📌 **Main branch contains only base array setup**
+
+---
+
+## 🌿 Branch 1: `sort` — Bubble Sort Feature
+
+### Create Branch
+
+```bash
+git checkout -b sort
+```
+
+```bash
+git branch
+  main
+* sort
+```
+
+### Commit Sort Feature
+
+```bash
+git status
+modified: task2.java
+```
+
+```bash
+git add .
+git commit -m "Implemented bubble sort for array"
+```
+
+📌 **Feature isolated and committed independently**
+
+---
+
+## 🌿 Branch 2: `insert` — Insert Element Feature
+
+### Create Branch from Main
+
+```bash
+git checkout main
+git checkout -b insert
+```
+
+```bash
+git branch
+  main
+  sort
+* insert
+```
+
+### Commit Insert Feature
+
+```bash
+git add .
+git commit -m "Added element insertion operation"
+```
+
+📌 **Demonstrates array resizing and index handling**
+
+---
+
+## 🌿 Branch 3: `delete` — Delete Element Feature
+
+### Create Branch from Main
+
+```bash
+git checkout main
+git checkout -b delete
+```
+
+```bash
+git branch
+  main
+  sort
+  insert
+* delete
+```
+
+### Commit Delete Feature
+
+```bash
+git add .
+git commit -m "Added element deletion operation"
+```
+
+📌 **Includes boundary validation and safe deletion**
+
+---
+
+## 🔀 Merging All Features into Main
+
+```bash
+git checkout main
+git merge sort
+git merge insert
+git merge delete
+git push origin main
+```
+
+📌 **Final `main` branch contains all features**
+
+---
+
+## 📁 Branch Summary
+
+| Branch   | Feature                        |
+| -------- | ------------------------------ |
+| `main`   | Base program + merged features |
+| `sort`   | Bubble sort implementation     |
+| `insert` | Insert element at position     |
+| `delete` | Delete element from position   |
 
 ---
 
@@ -48,11 +163,25 @@ All branches merged → main
 
 * **Language:** Java
 * **Version Control:** Git
+* **Platform:** GitHub
+* **IDE:** VS Code
 
 ---
 
-## 🎯 Purpose
+## 🎯 Internship-Ready Skills Demonstrated
 
-This repository is purely for **learning and practicing Git fundamentals**, especially branching and merging using a simple, understandable Java program.
+✔ Feature-based Git workflow
+✔ Clean commit history
+✔ Branch isolation
+✔ Java fundamentals
+✔ Real terminal usage (not GUI-only)
+
+---
+
+## 👤 Author
+
+**Aradhya Bhagwat**
+B.Tech CSE
+Git Branching & Java Practice Repository
 
 ---
