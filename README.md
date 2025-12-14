@@ -168,20 +168,20 @@ git push origin main
 
 ---
 
-## 🎯 Internship-Ready Skills Demonstrated
+## 🎯Skills Demonstrated<br><br>
 
-✔ Feature-based Git workflow
-✔ Clean commit history
-✔ Branch isolation
-✔ Java fundamentals
-✔ Real terminal usage (not GUI-only)
+✔ Feature-based Git workflow<br>
+✔ Clean commit history<br>
+✔ Branch isolation<br>
+✔ Java fundamentals<br>
+✔ Real terminal usage (not GUI-only)<br>
 
 ---
 
-## 👤 Author
+## 👤 Author<br><br>
 
-**Aradhya Bhagwat**
-B.Tech CSE
-Git Branching & Java Practice Repository
+**Aradhya Bhagwat**<br>
+B.Tech CSE<br>
+Git Branching & Java Practice Repository<br>
 
 ---
