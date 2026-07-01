@@ -16,13 +16,13 @@ Each array operation is implemented in a **separate Git branch**, following **st
 ## 🔹 Step 1: Clone Repository (Main Branch)
 
 ```bash
-C:\Users\aradhya\Desktop>git clone https://github.com/Aradhya-Bhagwat/Test-Repository.git
+git clone https://github.com/Aradhya-Bhagwat/Test-Repository.git
 Cloning into 'Test-Repository'...
 Receiving objects: 100% (6/6), done.
 ```
 
 ```bash
-C:\Users\aradhya\Desktop\Test-Repository>git status
+git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
